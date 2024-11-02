@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register | By Code Info</title>
+    <link rel="stylesheet" href="/main/login-signup.css">
+    <!-- Font Awesome Cdn Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .wrapper {
+            background-color: #fff;
+            max-width: 360px;
+            margin: 0 auto;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        button {
+            background-color:tomato;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            padding: 10px;
+            width: 100%;
+            cursor: pointer;
+        }
+
+        .or {
+            text-align: center;
+            color: #333;
+            margin: 20px 0;
+        }
+
+        .icons {
+            text-align: center;
+        }
+
+        .icons i {
+            font-size: 24px;
+            margin: 10px;
+        }
+
+        .not-member {
+            text-align: center;
+            color: #333;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Create an Account</h1>
+        <form>
+            <input type="text" placeholder="Full Name">
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Password">
+            <button>Register</button>
+        </form>
+        <p class="or">
+            ----- or continue with -----
+        </p>
+        <div class="icons">
+            <i class="fab fa-google"></i>
+            <i class="fab fa-github"></i>
+            <i class="fab fa-facebook"></i>
+        </div>
+        <div class="not-member">
+            Already a member? <a href="login.html">Sign In</a>
+        </div>
+    </div>
+</body>
+</html>

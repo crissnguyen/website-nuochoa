@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Login - Admin</title>
+    <!-- Link to Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Link to FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login-container {
+            width: 100%;
+            max-width: 400px;
+            margin-top: 50px;
+        }
+
+        .card {
+            border: 0;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-header {
+            border-radius: 15px 15px 0 0;
+            background-color: #6b46c1; /* Màu tím */
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .logo img {
+            border-radius: 50%; /* Bo góc ảnh thành hình tròn */
+        }
+
+        .btn-primary {
+            background-color: #6b46c1; /* Màu tím */
+            border-color: #6b46c1; /* Màu tím */
+        }
+
+        .btn-primary:hover {
+            background-color: #553c9a; /* Màu tím nhạt hơn khi hover */
+            border-color: #553c9a; /* Màu tím nhạt hơn khi hover */
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            color: #555;
+        }
+
+        input.form-control {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8 login-container">
+            <div class="card">
+                <div class="card-header">
+                    <div class="logo">
+                        <img src="assets/images/favicon.png" alt="Logo" width="80">
+                    </div>
+                    <h4>Admin Login</h4>
+                </div>
+                <div class="card-body">
+                    <form id="loginForm">
+                        <div class="form-group">
+                            <label for="username">Username:</label>
+                            <input type="text" class="form-control" id="username" placeholder="Enter username" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password:</label>
+                            <input type="password" class="form-control" id="password" placeholder="Enter password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Link to Bootstrap JS and Popper.js -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const loginForm = document.getElementById('loginForm');
+        const usernameInput = document.getElementById('username');
+        const passwordInput = document.getElementById('password');
+
+        // Tự động điền tên người dùng và mật khẩu
+        usernameInput.value = 'your_username';
+        passwordInput.value = 'your_password';
+
+        loginForm.addEventListener('submit', function (event) {
+            // Ngăn chặn hành vi mặc định của form
+            event.preventDefault();
+
+            // Chuyển hướng sang trang "index.html"
+            window.location.href = 'index.html';
+        });
+    });
+</script>
+
+</body>
+</html>
